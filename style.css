@@ -25,8 +25,7 @@ body {
     background-color: var(--BACKGROUNDCOLOR);
     padding: 1rem;
     border-radius: 20px;
-    width: 300px;
-    width: 100%;
+   
 }
 
 /* Head Part Styles */
@@ -96,11 +95,6 @@ body {
 
     .container {
         padding-bottom: 1.5rem;
-       width: 350px; /* Adjusted for larger screens */
-    }
-}
-@media (min-width: 768px) {
-    .container{
-        width: 400px;
+        min-width: 400px;
     }
 }
