@@ -1,0 +1,106 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Variables */
+:root {
+    --PRIMARYFONT: "Inter", serif;
+    --BACKGROUNDCOLOR: rgb(12, 12, 12);
+    --MAINBACKGROUNDCOLOR: rgb(0, 0, 0);
+    --FONTCOLOR: hsl(75, 94%, 57%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--MAINBACKGROUNDCOLOR);
+    font-family: var(--PRIMARYFONT);
+    color: white;
+}
+
+.container {
+    background-color: var(--BACKGROUNDCOLOR);
+    padding: 1rem;
+    border-radius: 20px;
+    width: 300px;
+    width: 100%;
+}
+
+/* Head Part Styles */
+.head_part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head_part > img {
+    border-radius: 50%;
+    width: 45%;
+    margin-top: 1rem;
+}
+
+.Name_part {
+    font-size: 1.7rem;
+    margin-top: 1.87rem;
+    font-weight: 500;
+}
+
+.location_part {
+    color: var(--FONTCOLOR);
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+
+.subtitle_part {
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+    font-weight: 400;
+}
+
+/* Social Media Part Styles */
+.socialmedia_part {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.socialmedia_part > p {
+    width: 95%;
+    background-color: rgb(72, 72, 72);
+    padding: 0.7rem 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+.socialmedia_part > p:hover {
+    background-color: var(--FONTCOLOR);
+    color: black;
+    transition: 1s;
+}
+
+/* Media Query */
+@media (min-width: 375px) {
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        padding-bottom: 1.5rem;
+       width: 350px; /* Adjusted for larger screens */
+    }
+}
+@media (min-width: 768px) {
+    .container{
+        width: 400px;
+    }
+}
